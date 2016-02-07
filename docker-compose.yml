@@ -1,0 +1,14 @@
+mongodb:
+  image: mongo
+  restart: always
+  ports:
+   - "27017:27017"
+  volumes:
+   - /home/vagrant/mongodb:/data/db
+  container_name: mongodb
+mailcatcher:
+  image: jdr/mailcatcher
+  restart: always
+  ports:
+   - "1080:1080"
+  container_name: mailcatcher

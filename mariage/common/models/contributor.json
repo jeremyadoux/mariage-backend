@@ -1,0 +1,26 @@
+{
+  "name": "contributor",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "firstname": {
+      "type": "string"
+    },
+    "lastname": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "blocks": {
+      "type": "hasMany",
+      "model": "block",
+      "foreignKey": "contributorId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,4 @@
+.idea
+.vagrant
+.npm
+node_modules
