@@ -10,5 +10,12 @@
     "database": "mariage",
     "name": "mongoDb",
     "connector": "mongodb"
+  },
+  "storage": {
+    "name": "storage",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "/home/strongloop/storage",
+    "maxFileSize": "52428800"
   }
 }

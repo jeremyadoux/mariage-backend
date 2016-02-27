@@ -6,6 +6,10 @@
     "validateUpsert": true
   },
   "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
     "title": {
       "type": "string",
       "required": true
@@ -13,6 +17,10 @@
     "text": {
       "type": "string",
       "required": true
+    },
+    "weight": {
+      "type": "Number",
+      "default": 0
     }
   },
   "validations": [],
@@ -21,6 +29,11 @@
       "type": "belongsTo",
       "model": "contributor",
       "foreignKey": "contributorId"
+    },
+    "image": {
+      "type": "belongsTo",
+      "model": "file",
+      "foreignKey": ""
     }
   },
   "acls": [],
