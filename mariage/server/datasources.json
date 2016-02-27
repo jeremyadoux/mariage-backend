@@ -17,5 +17,17 @@
     "provider": "filesystem",
     "root": "/home/strongloop/storage",
     "maxFileSize": "52428800"
+  },
+  "myEmailDataSource": {
+    "name": "myEmailDataSource",
+    "connector": "mail",
+    "transports": [
+      {
+        "type": "smtp",
+        "host": "mailcatcher",
+        "secure": false,
+        "port": 1025
+      }
+    ]
   }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "file",
+  "name": "contact",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -7,12 +7,14 @@
   },
   "properties": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
-    "type": {
-      "type": "string"
+    "email": {
+      "type": "string",
+      "required": true
     },
-    "url": {
+    "content": {
       "type": "string",
       "required": true
     }

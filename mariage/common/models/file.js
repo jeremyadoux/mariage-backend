@@ -32,13 +32,10 @@ module.exports = function(File) {
 
   File.download = function(ctx, res, req, width, height, id, cb) {
     //Load File if exist
-    console.log(id);
     File.findById(id, function(err, fileObj) {
       if(err) {
-        console.log(err);
         cb(err);
       } else {
-        console.log(fileObj.url);
         return File.app.models.container.download('common', fileObj.name, req, res, cb);
 
 

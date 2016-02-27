@@ -48,5 +48,12 @@
   "file": {
     "dataSource": "mongoDb",
     "public": true
+  },
+  "Email": {
+    "dataSource": "myEmailDataSource"
+  },
+  "contact": {
+    "dataSource": "mongoDb",
+    "public": true
   }
 }
