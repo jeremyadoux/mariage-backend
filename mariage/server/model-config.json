@@ -55,5 +55,9 @@
   "contact": {
     "dataSource": "mongoDb",
     "public": true
+  },
+  "comment": {
+    "dataSource": "mongoDb",
+    "public": true
   }
 }
