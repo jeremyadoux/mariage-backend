@@ -24,9 +24,13 @@
     "transports": [
       {
         "type": "smtp",
-        "host": "mailcatcher",
-        "secure": false,
-        "port": 1025
+        "host": "postfix",
+        "secure": true,
+        "auth": {
+          "user": "admin",
+          "pass": "admin"
+        },
+        "port": 25
       }
     ]
   }
