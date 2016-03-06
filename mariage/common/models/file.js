@@ -36,7 +36,11 @@ module.exports = function(File) {
       if(err) {
         cb(err);
       } else {
-        return File.app.models.container.download('common', fileObj.name, req, res, cb);
+        if(fileObj.name !== null) {
+          cb(err);
+        } else {
+          return File.app.models.container.download('common', fileObj.name, req, res, cb);
+        }
 
 
         /*
